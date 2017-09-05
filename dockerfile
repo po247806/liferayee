@@ -11,4 +11,3 @@ RUN chmod -R 777 /usr
 EXPOSE 8080 8009
 USER 10001
 CMD /usr/bin/liferay
-
