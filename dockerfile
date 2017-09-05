@@ -1,4 +1,4 @@
-FROM debian:8
+FROM vijha1989/tliferay:7
 ENV JAVA_HOME=/opt/jdk
 ENV JRE_HOME=/opt/jdk/jre
 ADD ./deploy /opt/tomcat-8.0.32/deploy/
