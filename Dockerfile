@@ -10,5 +10,6 @@ RUN apt-get update && apt-get install -y \
     wget \
     curl \
     vim \
+    apt-get clean
 EXPOSE 8080 8009
 CMD /usr/bin/liferay
