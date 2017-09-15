@@ -3,6 +3,7 @@ ENV JAVA_HOME=/opt/jdk
 ENV JRE_HOME=/opt/jdk/jre
 ADD ./deploy /opt/tomcat-8.0.32/deploy/
 ADD portal-ext.properties /opt
+RUN timedatectl set-timezone Asia/Jakarta
 RUN chmod -R 777 /opt
 RUN echo rm -rf /opt/tomcat-8.0.32/temp > /usr/bin/liferay
 RUN echo rm -rf /opt/tomcat-8.0.32/temp >> /usr/bin/liferay
